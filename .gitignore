@@ -1,0 +1,17 @@
+# Dépendances et compilation
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# Secrets : ne jamais envoyer sur GitHub
+.env
+.env.local
+.env*.local
+CLES-ACCES*.txt
+
+# Divers
+.DS_Store
+.vercel
+npm-debug.log*
