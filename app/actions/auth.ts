@@ -40,9 +40,9 @@ export async function signUpWithKey(_prev: FormState, formData: FormData): Promi
     .is("used_at", null)
     .select("id");
 
-  if (claimError) {
-    return { error: return { error: "Impossible de vérifier la clé. Détail technique : " + claimError.message, email };
-  }
+    if (claimError) {
+    return { error: "Impossible de vérifier la clé. Détail technique : " + claimError.message, email };
+  }  
   if (!claimed || claimed.length === 0) {
     return { error: "Clé d'accès invalide ou déjà utilisée.", email };
   }
